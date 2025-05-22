@@ -11,11 +11,6 @@ eureka:
   server:
     wait-time-in-ms-when-sync-empty: 0  # dont wait to registry if its empty (faster startup)
 
-management:
-  endpoints:
-    web:
-      exposure:
-        include: health,info
 
 logging:
   level:
