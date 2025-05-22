@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: discovery-service
+
+server:
+  port: 8761                
+eureka:
+  client:
+    register-with-eureka: false  # don't register itself
+    fetch-registry: false        # don`t fetch the registry from others
+  server:
+    wait-time-in-ms-when-sync-empty: 0  # dont wait to registry if its empty (faster startup)
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+
+logging:
+  level:
+    com.netflix.eureka: INFO                        
+    org.springframework.cloud.netflix.eureka: INFO   
