@@ -1,0 +1,16 @@
+server:
+  port: 8080
+
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: uri-core-api
+          uri: lb://URI-CORE-SERVICE
+          predicates:
+            - Path=/api/**
+
+        - id: uri-core-redirect
+          uri: lb://URI-CORE-SERVICE
+          predicates:
+            - Path=/r/**
