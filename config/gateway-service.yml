@@ -14,3 +14,9 @@ spring:
           uri: lb://URI-CORE-SERVICE
           predicates:
             - Path=/r/**
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,gateway
