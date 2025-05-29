@@ -18,5 +18,9 @@ spring:
 management:
   endpoints:
     web:
+      base-path: /admin
       exposure:
         include: health,info,gateway
+  endpoint:
+    gateway:
+      enabled: true
