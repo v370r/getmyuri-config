@@ -24,3 +24,8 @@ management:
   endpoint:
     gateway:
       enabled: true
+
+user-auth-service:
+  url: http://localhost:8081  # userAuth-service URL
+  endpoints:
+    validate: /api/v1/auth/validate
