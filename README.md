@@ -1,1 +1,1 @@
-## Config for entire GetMyURI
+## Config for entire GetMyURI  - connected to config server
