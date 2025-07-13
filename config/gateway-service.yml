@@ -56,10 +56,3 @@ user-auth-service:
   endpoints:
     validate: /api/v1/auth/validate
 
-application:
-    security:
-        jwt:
-            secret-key: ${JWT_SECRET_KEY}
-            expiration: ${JWT_EXPIRATION_TIME}
-            header: Authorization
-            prefix: Bearer
