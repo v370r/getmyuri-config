@@ -1,6 +1,6 @@
 spring:
   application:
-    name: uri-core-service
+    name: user-auth-service
 
 springdoc:
     default-produces-media-type: application/json
