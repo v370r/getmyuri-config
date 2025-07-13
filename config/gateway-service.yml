@@ -55,3 +55,11 @@ user-auth-service:
   url: http://localhost:8081  # userAuth-service URL
   endpoints:
     validate: /api/v1/auth/validate
+
+application:
+    security:
+        jwt:
+            secret-key: ${JWT_SECRET_KEY}
+            expiration: ${JWT_EXPIRATION_TIME}
+            header: Authorization
+            prefix: Bearer
